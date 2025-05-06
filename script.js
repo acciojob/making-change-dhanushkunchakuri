@@ -1,8 +1,9 @@
 const makeChange = (c) => {
   // your name here
 	let arr=[25,10,5,1];
-	ler res={q: 0, d: 0, n: 0, p: 0};
+	let res={q: 0, d: 0, n: 0, p: 0};
 	let i=0;
+	
 	while(c!=0 && i<arr.length){
 		let count=Math.floor(c/arr[i]);
 		c-=count*arr[i];
@@ -17,4 +18,4 @@ const makeChange = (c) => {
 
 // Do not the change the code below
 const c = prompt("Enter c: ");
-alert(JSON.stringify(makeChange(c)));
+alert(JSON.stringify(makeChange(Number(c))));
